@@ -15,8 +15,8 @@
 		8730E3361A0F048B00B27270 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8730E3341A0F048B00B27270 /* LaunchScreen.xib */; };
 		8730E3421A0F048B00B27270 /* netdelegateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8730E3411A0F048B00B27270 /* netdelegateTests.m */; };
 		8730E34C1A0F051200B27270 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8730E34B1A0F051200B27270 /* SystemConfiguration.framework */; };
-		8730E34F1A0F052200B27270 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 8730E34E1A0F052200B27270 /* Reachability.m */; };
 		8730E3521A0F057A00B27270 /* Netstatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 8730E3511A0F057A00B27270 /* Netstatus.m */; };
+		87AF6FAB1A0F8F670078A041 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 87AF6FAA1A0F8F670078A041 /* Reachability.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,10 +44,10 @@
 		8730E3401A0F048B00B27270 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8730E3411A0F048B00B27270 /* netdelegateTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = netdelegateTests.m; sourceTree = "<group>"; };
 		8730E34B1A0F051200B27270 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		8730E34D1A0F052200B27270 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = ../../../Reachability.h; sourceTree = "<group>"; };
-		8730E34E1A0F052200B27270 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = ../../../Reachability.m; sourceTree = "<group>"; };
 		8730E3501A0F057A00B27270 /* Netstatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Netstatus.h; path = ../Netstatus.h; sourceTree = "<group>"; };
 		8730E3511A0F057A00B27270 /* Netstatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Netstatus.m; path = ../Netstatus.m; sourceTree = "<group>"; };
+		87AF6FA91A0F8F670078A041 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		87AF6FAA1A0F8F670078A041 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,10 +91,10 @@
 		8730E3241A0F048B00B27270 /* netdelegate */ = {
 			isa = PBXGroup;
 			children = (
+				87AF6FA91A0F8F670078A041 /* Reachability.h */,
+				87AF6FAA1A0F8F670078A041 /* Reachability.m */,
 				8730E3501A0F057A00B27270 /* Netstatus.h */,
 				8730E3511A0F057A00B27270 /* Netstatus.m */,
-				8730E34D1A0F052200B27270 /* Reachability.h */,
-				8730E34E1A0F052200B27270 /* Reachability.m */,
 				8730E3291A0F048B00B27270 /* AppDelegate.h */,
 				8730E32A1A0F048B00B27270 /* AppDelegate.m */,
 				8730E32C1A0F048B00B27270 /* ViewController.h */,
@@ -236,8 +236,8 @@
 				8730E32E1A0F048B00B27270 /* ViewController.m in Sources */,
 				8730E32B1A0F048B00B27270 /* AppDelegate.m in Sources */,
 				8730E3521A0F057A00B27270 /* Netstatus.m in Sources */,
-				8730E34F1A0F052200B27270 /* Reachability.m in Sources */,
 				8730E3281A0F048B00B27270 /* main.m in Sources */,
+				87AF6FAB1A0F8F670078A041 /* Reachability.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,6 +428,7 @@
 				8730E3471A0F048B00B27270 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8730E3481A0F048B00B27270 /* Build configuration list for PBXNativeTarget "netdelegateTests" */ = {
 			isa = XCConfigurationList;
@@ -436,6 +437,7 @@
 				8730E34A1A0F048B00B27270 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
