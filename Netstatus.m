@@ -42,6 +42,7 @@
     NetworkStatus status = [ability currentReachabilityStatus];
     //statusの値がNotReacableでないかどうか(ネットと接続できる状況であるか)
     if (status != NotReachable) {
+        //デリゲート先にNetlinkというメソッドがあるかどうか
         if ([self.delegate respondsToSelector:@selector(Netlink)]) {
             //デリゲート先のNetlinkを実行
             [self.delegate Netlink];
@@ -49,6 +50,7 @@
     }
     //ネットと接続できない場合の処理
     else{
+        //デリゲート先にNetnotlinkというメソッドがあるかどうか
         if ([self.delegate respondsToSelector:@selector(Netnotlink)]) {
             //デリゲート先のNetnotlinkを実行
             [self.delegate Netnotlink];

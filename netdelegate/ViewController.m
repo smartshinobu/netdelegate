@@ -30,11 +30,12 @@
     // Dispose of any resources that can be recreated.
 }
 
-
+//デリゲートメソッドを実装
 -(void)Netnotlink{
     self.label.text = @"ネットと接続できません";
 }
 -(void)Netlink{
     self.label.text = @"ネットと接続できます";
 }
+
 @end
